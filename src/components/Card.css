@@ -5,6 +5,9 @@
   height: 80%;
   overflow: hidden;
 }
+.card-title{
+    font-size: 18px;
+}
 .card-container .title-container {
   margin: 20px;
   display: flex;
