@@ -6,8 +6,10 @@ function ProfileCard() {
     <div className="profile-container">
       <div className="profile-details">
         <img className="profile-img" src={profileimg} alt="profile"></img>
-        <p className="report-text">Report for</p>
-        <p className="profile-name">Jeremy Robson</p>
+        <div className="profile-content">
+          <p className="report-text">Report for</p>
+          <p className="profile-name">Jeremy Robson</p>
+        </div>
       </div>
       <ul className="profile-options">
         <li>Daily</li>

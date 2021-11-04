@@ -18,10 +18,11 @@
 .report-text {
   color: #988ffb;
   margin-left: 20px;
+  font-size: 2vw;
 }
 .profile-name {
   color: #fff;
-  font-size: 35px;
+  font-size: 3vw;
   margin: 10px 20px 50px 20px;
 }
 .profile-options {
@@ -34,3 +35,31 @@
   margin: 10px 20px;
   padding: 0 10px;
 }
+
+@media (max-width: 768px) {
+  .profile-options {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .profile-details {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-img {
+    width: auto * 0.5;
+    height: auto * 0.5;
+  }
+  .profile-content {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 500px) {
+  .report-text {
+    font-size: 3vw;
+  }
+  .profile-name {
+    font-size: 4vw;
+  }
+} ;

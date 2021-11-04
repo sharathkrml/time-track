@@ -48,42 +48,38 @@ body {
 .work {
   background: url(./assets/images/icon-work.svg) no-repeat right 10px top -12px,
     var(--work);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .play {
   background: url(./assets/images/icon-play.svg) no-repeat right 10px top -12px,
     var(--play);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .study {
   background: url(./assets/images/icon-study.svg) no-repeat right 10px top -12px,
     var(--study);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .exercise {
   background: url(./assets/images/icon-exercise.svg) no-repeat right 10px top -2px,
     var(--exercise);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .social {
   background: url(./assets/images/icon-social.svg) no-repeat right 10px top -12px,
     var(--social);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .self-care {
   background: url(./assets/images/icon-self-care.svg) no-repeat right 10px top -12px,
     var(--selfcare);
+}
+.small-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .small-card {
+    height: 30vh;
+  }
 }
