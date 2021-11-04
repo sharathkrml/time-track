@@ -1,7 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
 import ProfileCard from "./components/ProfileCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 function App() {
   const [active, setActive] = useState("daily");
   const [work, setWork] = useState({
@@ -98,7 +98,11 @@ function App() {
           <Card
             title="Work"
             current={work[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={work[active].previous}
           />
         </div>
@@ -106,7 +110,11 @@ function App() {
           <Card
             title="Play"
             current={play[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={play[active].previous}
           />
         </div>
@@ -114,7 +122,11 @@ function App() {
           <Card
             title="Study"
             current={study[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={study[active].previous}
           />
         </div>
@@ -122,7 +134,11 @@ function App() {
           <Card
             title="Exercise"
             current={exercise[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={exercise[active].previous}
           />
         </div>
@@ -130,7 +146,11 @@ function App() {
           <Card
             title="Social"
             current={social[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={social[active].previous}
           />
         </div>
@@ -138,7 +158,11 @@ function App() {
           <Card
             title="Self Care"
             current={selfcare[active].current}
-            timeframes={active === "daily" ? "Day" : active.charAt(0).toUpperCase()+active.slice(1, -2)}
+            timeframes={
+              active === "daily"
+                ? "Day"
+                : active.charAt(0).toUpperCase() + active.slice(1, -2)
+            }
             previous={selfcare[active].previous}
           />
         </div>
