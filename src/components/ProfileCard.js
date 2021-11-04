@@ -1,7 +1,7 @@
 import React from "react";
 import profileimg from "../assets/images/image-jeremy.png";
 import "./ProfileCard.css";
-function ProfileCard() {
+function ProfileCard(props) {
   return (
     <div className="profile-container">
       <div className="profile-details">
@@ -12,9 +12,22 @@ function ProfileCard() {
         </div>
       </div>
       <ul className="profile-options">
-        <li>Daily</li>
-        <li>Weekly</li>
-        <li>Monthly</li>
+        <li
+          onClick={() => props.setActive("daily")}
+          className={props.active === "daily" ? "active" : "inactive"}
+        >
+          Daily
+        </li>
+        <li
+          onClick={() => props.setActive("weekly")}
+          className={props.active === "weekly" ? "active" : "inactive"}
+        >
+          Weekly
+        </li>
+        <li onClick={() => props.setActive("monthly")}
+          className={props.active === "monthly" ? 'active' : 'inactive'}
+          
+          >Monthly</li>
       </ul>
     </div>
   );

@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Card.css";
 import ellipsis from "../assets/images/icon-ellipsis.svg";
 function Card(props) {
+  const [ellipsisHover, setEllipsisHover] = useState();
+  useEffect(() => {
+    console.log(ellipsisHover);
+  }, [ellipsisHover]);
   return (
-    <div className="card-container">
-      <div className="title-container">
+    <div className={ellipsisHover ? "ellipsisHover" : "card-container"}>
+      <div onHov className="title-container">
         <h3 className="card-title">{props.title}</h3>
-        <img className="ellipsis" src={ellipsis} alt="ellipsis" />
+        <img
+          onMouseEnter={() => setEllipsisHover(true)}
+          onMouseLeave={() => setEllipsisHover(false)}
+          className="ellipsis"
+          src={ellipsis}
+          alt="ellipsis"
+        />
       </div>
       <div className="card-details">
         <p className="current-time">{props.current}hrs</p>

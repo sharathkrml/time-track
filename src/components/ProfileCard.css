@@ -18,11 +18,11 @@
 .report-text {
   color: #988ffb;
   margin-left: 20px;
-  font-size: 2vw;
+  font-size: 0.8rem;
 }
 .profile-name {
   color: #fff;
-  font-size: 3vw;
+  font-size: 1.5rem;
   margin: 10px 20px 50px 20px;
 }
 .profile-options {
@@ -34,6 +34,17 @@
 .profile-options li {
   margin: 10px 20px;
   padding: 0 10px;
+  cursor: pointer;
+}
+.profile-options .active{
+  color: #fff;
+}
+.profile-options .inactive{
+  color: var(--blue);
+}
+.profile-options li:hover{
+  transform: scale(1.05);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
