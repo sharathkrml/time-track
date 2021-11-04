@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import ProfileCard from './components/ProfileCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid">
+        <div className="card profile">
+          <ProfileCard/>
+        </div>
+        <div className="card work"><Card/></div>
+        <div className="card play"><Card/></div>
+        <div className="card study"><Card/></div>
+        <div className="card exercise"><Card/></div>
+        <div className="card social"><Card/></div>
+        <div className="card self-care"><Card/></div>
+      </div>
     </div>
   );
 }
+
 
 export default App;
