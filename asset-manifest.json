@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/time-track/static/css/main.5754468b.chunk.css",
+    "main.js": "/time-track/static/js/main.171b49b4.chunk.js",
+    "main.js.map": "/time-track/static/js/main.171b49b4.chunk.js.map",
+    "runtime-main.js": "/time-track/static/js/runtime-main.b79df2da.js",
+    "runtime-main.js.map": "/time-track/static/js/runtime-main.b79df2da.js.map",
+    "static/js/2.ddc3ee16.chunk.js": "/time-track/static/js/2.ddc3ee16.chunk.js",
+    "static/js/2.ddc3ee16.chunk.js.map": "/time-track/static/js/2.ddc3ee16.chunk.js.map",
+    "static/js/3.00c96836.chunk.js": "/time-track/static/js/3.00c96836.chunk.js",
+    "static/js/3.00c96836.chunk.js.map": "/time-track/static/js/3.00c96836.chunk.js.map",
+    "index.html": "/time-track/index.html",
+    "static/css/main.5754468b.chunk.css.map": "/time-track/static/css/main.5754468b.chunk.css.map",
+    "static/js/2.ddc3ee16.chunk.js.LICENSE.txt": "/time-track/static/js/2.ddc3ee16.chunk.js.LICENSE.txt",
+    "static/media/icon-ellipsis.a57a4ac8.svg": "/time-track/static/media/icon-ellipsis.a57a4ac8.svg",
+    "static/media/App.css": "/time-track/static/media/icon-work.a3f124e5.svg",
+    "static/media/image-jeremy.71cd41f1.png": "/time-track/static/media/image-jeremy.71cd41f1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b79df2da.js",
+    "static/js/2.ddc3ee16.chunk.js",
+    "static/css/main.5754468b.chunk.css",
+    "static/js/main.171b49b4.chunk.js"
+  ]
+}
