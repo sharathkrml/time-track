@@ -1,19 +1,21 @@
-import React from 'react'
-import profileimg from '../assets/images/image-jeremy.png';
-
+import React from "react";
+import profileimg from "../assets/images/image-jeremy.png";
+import "./ProfileCard.css";
 function ProfileCard() {
-    return (
-        <div className="profile-container">
-            <img src={profileimg} alt="profile"></img>
-            <p>Report for</p>
-            <h1>Jeremy Robson/</h1>
-            <ul>
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
-            </ul>
-        </div>
-    )
+  return (
+    <div className="profile-container">
+      <div className="profile-details">
+        <img className="profile-img" src={profileimg} alt="profile"></img>
+        <p className="report-text">Report for</p>
+        <p className="profile-name">Jeremy Robson</p>
+      </div>
+      <ul className="profile-options">
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </div>
+  );
 }
 
-export default ProfileCard
+export default ProfileCard;

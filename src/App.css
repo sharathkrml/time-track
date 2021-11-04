@@ -28,7 +28,7 @@ body {
   margin: 25vh auto;
 }
 .profile {
-  background-color: var(--social);
+  background-color: var(--dark-blue);
 }
 
 .grid {

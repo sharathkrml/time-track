@@ -1,0 +1,24 @@
+.profile-img{
+    width: 75px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin:30px 20px;
+}
+.profile-details{
+    background-color: var(--blue);
+    border-radius: 20px;
+}
+.report-text{
+    color: #988ffb;
+}
+.profile-name{
+    color: #fff;
+}
+.profile-options{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.profile-options li{
+    margin:10px 20px;
+}
